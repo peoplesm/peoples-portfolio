@@ -60,7 +60,7 @@ main section {
 
 .pic {
   display: flex;
-  flex: 0 0 350px;
+  flex: 0 1 350px;
 }
 
 .profile-pic {
