@@ -29,6 +29,16 @@ nav {
   align-items: center;
 }
 
+aside {
+  display: flex;
+  width: 10%;
+  border-right: 3px solid black;
+  margin-top: 0px;
+  padding-top: 20px;
+  min-width: 155px;
+  justify-content: right;
+}
+
 h1 {
   font-size: 200%;
 }
@@ -37,7 +47,7 @@ h2 {
 }
 h1,
 h2 {
-  margin: 20px;
+  margin: 10px;
 }
 
 li {
@@ -67,18 +77,42 @@ main {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
-  margin-top: 110px;
+  margin-top: 74px;
+  align-content: flex-start;
 }
 
 main section {
   display: flex;
-  width: 85%;
+  width: 90%;
+  padding-left: 10px;
+  line-height: 1.5;
+  height: fit-content;
+}
+
+.about .portfolio .contact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+}
+
+.bio {
+  display: flex;
+  flex: 0 0 65%;
+  padding-top: 20px;
 }
 
 .pic {
+  padding-top: 10px;
+  padding-left: 10px;
   display: flex;
-  flex: 0 1 350px;
+  height: fit-content;
+  max-height: 400px;
+  max-width: 290px;
 }
 
 .profile-pic {
@@ -107,6 +141,11 @@ footer {
   header {
     background: #772014;
   }
+  .pic {
+  }
+  aside {
+    min-width: 155px;
+  }
 }
 
 /* Cards are stacked on top of each other at 768px or smaller */
@@ -114,5 +153,8 @@ footer {
   /* Change the header color */
   header {
     background: #8ac4ff;
+  }
+  aside {
+    min-width: 155px;
   }
 }
