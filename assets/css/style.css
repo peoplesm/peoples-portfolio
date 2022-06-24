@@ -27,9 +27,14 @@ header {
 nav {
   display: flex;
   align-items: center;
-  margin: 20px;
 }
 
+h1 {
+  font-size: 200%;
+}
+h2 {
+  font-size: 175%;
+}
 h1,
 h2 {
   margin: 20px;
@@ -45,12 +50,25 @@ a {
   color: aliceblue;
 }
 
+a:hover {
+  color: black;
+}
+a:active {
+  color: #772014;
+}
+
+nav ul {
+  font-size: 120%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 main {
-  margin-top: 110px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
+  margin-top: 110px;
 }
 
 main section {
@@ -65,4 +83,36 @@ main section {
 
 .profile-pic {
   width: 100%;
+  border-radius: 50%;
+  border-style: dashed;
+  border-width: 5px;
+  border-color: rgb(92, 19, 25);
+}
+
+footer {
+  background-color: green;
+  border-top: 10px solid black;
+  padding: 5px;
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: fit-content;
+
+  justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  /* Change the header color */
+  header {
+    background: #772014;
+  }
+}
+
+/* Cards are stacked on top of each other at 768px or smaller */
+@media screen and (max-width: 768px) {
+  /* Change the header color */
+  header {
+    background: #8ac4ff;
+  }
 }
