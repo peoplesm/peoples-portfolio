@@ -79,6 +79,7 @@ main {
   width: 100%;
   margin-top: 74px;
   align-content: flex-start;
+  overflow: hidden;
 }
 
 main section {
@@ -98,6 +99,7 @@ main section {
 }
 
 .contact {
+  height: 100%;
 }
 
 .bio {
@@ -128,7 +130,7 @@ footer {
   border-top: 10px solid black;
   padding: 5px;
   display: flex;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   width: 100%;
   height: fit-content;
