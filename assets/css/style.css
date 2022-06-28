@@ -15,36 +15,13 @@ body {
   margin: 0;
 }
 
-header {
-  background-color: green;
-  border-bottom: 10px solid black;
-  position: fixed;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
-aside {
-  display: flex;
-  width: 10%;
-  border-right: 3px solid black;
-  margin-top: 0px;
-  padding-top: 20px;
-  min-width: 155px;
-  justify-content: right;
-}
-
 h1 {
   font-size: 200%;
 }
 h2 {
   font-size: 175%;
 }
+
 h1,
 h2 {
   margin: 10px;
@@ -60,11 +37,49 @@ a {
   color: aliceblue;
 }
 
+#portfolio {
+  scroll-margin-top: 75px;
+}
+
 a:hover {
   color: black;
 }
 a:active {
   color: #772014;
+}
+
+.projects img:hover {
+  box-shadow: 7px 7px 15px green;
+}
+
+header {
+  background-color: green;
+  border-bottom: 10px solid black;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.home {
+  flex: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+aside {
+  display: flex;
+  width: 10%;
+  border-right: 3px solid black;
+  min-width: 155px;
+  justify-content: right;
+}
+
+.about aside {
+  padding-top: 20px;
 }
 
 nav ul {
@@ -79,7 +94,6 @@ main {
   width: 100%;
   margin-top: 74px;
   align-content: flex-start;
-  overflow: hidden;
 }
 
 main section {
@@ -98,8 +112,48 @@ main section {
   padding: 0;
 }
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.first-project {
+  display: flex;
+
+  justify-content: center;
+}
+
+.other-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.other-projects img,
+.first-project img {
+  margin: 10px;
+}
+
+.first-project img {
+  flex: 0 1 auto;
+  min-width: 100px;
+}
+
 .contact {
-  height: 100%;
+  margin-bottom: 30px;
+}
+
+.contact section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact ul {
+  flex-wrap: wrap;
+  font-size: 120%;
+  text-decoration: underline;
 }
 
 .bio {
@@ -125,6 +179,10 @@ main section {
   border-color: rgb(92, 19, 25);
 }
 
+section ul {
+  display: flex;
+}
+
 footer {
   background-color: green;
   border-top: 10px solid black;
@@ -143,8 +201,7 @@ footer {
   header {
     background: #772014;
   }
-  .pic {
-  }
+
   aside {
     min-width: 155px;
   }
