@@ -28,6 +28,17 @@ h2 {
   margin: 10px;
 }
 
+h4 {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 11px;
+  padding: 2px;
+  border: 2px solid black;
+  background-color: green;
+  box-shadow: 5px 5px 5px black;
+}
+
 li {
   display: inline;
   padding: 20px;
@@ -61,6 +72,7 @@ header {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .home {
@@ -117,6 +129,13 @@ main section {
 .projects {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.titlepic {
+  position: relative;
+
+  display: flex;
 }
 
 .first-project {
@@ -213,6 +232,9 @@ footer {
 @media screen and (max-width: 992px) {
   aside {
     min-width: 155px;
+  }
+  .first-project img {
+    max-width: 300px;
   }
 }
 
