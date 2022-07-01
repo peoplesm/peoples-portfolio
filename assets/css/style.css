@@ -39,6 +39,9 @@ a {
   text-decoration: none;
   color: aliceblue;
 }
+#about {
+  scroll-margin-top: 75px;
+}
 
 #portfolio {
   scroll-margin-top: 75px;
@@ -248,7 +251,7 @@ footer {
   }
 
   main {
-    margin-top: 110px;
+    margin-top: 140px;
     font-size: 75%;
   }
 
@@ -256,8 +259,12 @@ footer {
     width: 98%;
   }
 
+  #about {
+    scroll-margin-top: 140px;
+  }
+
   #portfolio {
-    scroll-margin-top: 110px;
+    scroll-margin-top: 140px;
   }
   .contact-links ul li {
     padding: 5px;
